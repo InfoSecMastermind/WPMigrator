@@ -4,18 +4,18 @@
 set -e
 
 # Prompt for input parameters
-read -p "Enter your domain (e.g., yourdomain.com): " DOMAIN
-read -p "Enter your Cloudways server IP: " CLOUDWAYS_SERVER
-read -p "Enter your Cloudways username: " CLOUDWAYS_USER
-read -sp "Enter your Cloudways password: " CLOUDWAYS_PASS
+read -p $'\033[1;36mEnter your domain (e.g., yourdomain.com):\033[0m ' DOMAIN
+read -p $'\033[1;36mEnter your Cloudways server IP:\033[0m ' CLOUDWAYS_SERVER
+read -p $'\033[1;36mEnter your Cloudways username:\033[0m ' CLOUDWAYS_USER
+read -sp $'\033[1;36mEnter your Cloudways password:\033[0m ' CLOUDWAYS_PASS
 echo ""
-read -p "Enter your Cloudways app name: " APP_NAME
-read -p "Enter your local database name: " LOCAL_DB_NAME
-read -p "Enter your local database username: " LOCAL_DB_USER
-read -sp "Enter your local database password: " LOCAL_DB_PASS
+read -p $'\033[1;36mEnter your Cloudways app name:\033[0m ' APP_NAME
+read -p $'\033[1;36mEnter your local database name:\033[0m ' LOCAL_DB_NAME
+read -p $'\033[1;36mEnter your local database username:\033[0m ' LOCAL_DB_USER
+read -sp $'\033[1;36mEnter your local database password:\033[0m ' LOCAL_DB_PASS
 echo ""
-read -p "Enter your local database host (default: localhost): " LOCAL_DB_HOST
-read -p "Enter your local web root (default: /var/www/html/public_html): " WEB_ROOT
+read -p $'\033[1;36mEnter your local database host (default: localhost):\033[0m ' LOCAL_DB_HOST
+read -p $'\033[1;36mEnter your local web root (default: /var/www/html/public_html):\033[0m ' WEB_ROOT
 
 # Set default values if not provided
 LOCAL_DB_HOST=${LOCAL_DB_HOST:-localhost}
