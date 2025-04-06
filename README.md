@@ -7,7 +7,7 @@ This script facilitates the migration of your WordPress and WooCommerce sites fr
 - Linux or macOS system (or WSL on Windows).
 - **bash** shell (comes pre-installed on most systems).
 - A working installation of **WordPress** and **WooCommerce**.
-- **Cloudways** account details.
+- **Cloudways** server and SFTP credential details.
 
 ## Script Overview
 
